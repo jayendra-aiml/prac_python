@@ -1,0 +1,11 @@
+l=float(input("Enter the length of the room in meter: "))
+w=float(input("Enter the width of the room in meter: "))
+h=float(input("Enter the height of the room in meter: "))
+paint_cost=float(input("Enter the cost of the paint per liter: "))
+floor = l * w
+wall = 2 * (l * w)
+volume = l * w * h
+material = wall / 10
+total_cost = material * paint_cost
+print("Material required=",material,"Ltr")
+print("Total cost of the paint=",total_cost,"₹")
